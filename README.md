@@ -4,7 +4,7 @@ Application monopage qui affiche des conseils **uniquement en français** et per
 
 ## Utilisation
 
-- Ouvrez `index.html` dans votre navigateur, ou
+- Ouvrez `index.html` (ou `french/index.html`) dans votre navigateur, ou
 - Lancez un serveur local (optionnel) :
 
 ```bash
@@ -18,4 +18,5 @@ Puis ouvrez `http://localhost:8080`.
 - `index.html` : structure de la page
 - `styles.css` : styles (design doux + transitions)
 - `script.js` : logique (tirage aléatoire, feedback, confirmation)
+- `french/` : copie du site si votre hébergement attend un sous-dossier
 
