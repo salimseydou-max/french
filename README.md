@@ -4,7 +4,10 @@ Application monopage qui affiche des conseils **uniquement en français** et per
 
 ## Utilisation
 
-- Ouvrez `index.html` (ou `french/index.html`) dans votre navigateur, ou
+- Selon la plateforme, le dossier servi peut être `public/`.
+  - En local: ouvrez `index.html` (ou `french/index.html`)
+  - En déploiement “statique”: utilisez `public/index.html` (ou `public/french/index.html`)
+- Ou lancez un serveur local (optionnel) :
 - Lancez un serveur local (optionnel) :
 
 ```bash
