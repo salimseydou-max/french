@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Application web de conseils en français : obtenez un conseil, donnez votre avis."
+    />
+    <title>Application Web de Conseils</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="title">
+        <header class="header">
+          <h1 id="title" class="title">Application Web de Conseils</h1>
+          <p class="subtitle">Des conseils simples, rapides et motivants — en français.</p>
+        </header>
+
+        <figure class="advice" aria-label="Conseil du moment">
+          <blockquote id="adviceText" class="adviceText" aria-live="polite"></blockquote>
+        </figure>
+
+        <div class="actions">
+          <button id="newAdviceBtn" class="btn btnPrimary" type="button">
+            Nouveau conseil
+          </button>
+
+          <div class="feedback" aria-label="Donner votre avis">
+            <span class="feedbackLabel">Ce conseil vous a-t-il aidé ?</span>
+            <div class="feedbackButtons">
+              <button
+                id="helpfulBtn"
+                class="btn btnSecondary"
+                type="button"
+                data-feedback="helpful"
+              >
+                Utile
+              </button>
+              <button
+                id="notHelpfulBtn"
+                class="btn btnSecondary"
+                type="button"
+                data-feedback="notHelpful"
+              >
+                Pas utile
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="statusRow">
+          <p id="statusMessage" class="statusMessage" role="status" aria-live="polite"></p>
+          <p id="stats" class="stats" aria-label="Statistiques locales"></p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small
+          >Fonctionne entièrement dans votre navigateur (sans serveur).</small
+        >
+      </footer>
+    </main>
+  </body>
+</html>
